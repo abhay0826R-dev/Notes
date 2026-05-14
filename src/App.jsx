@@ -17,12 +17,6 @@ const App = () => {
       title: title,
       content: para,
       date: date
-    },
-    {
-      id:2,
-      title: title,
-      content: para,
-      date: date
     }
   ]
 
