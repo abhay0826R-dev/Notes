@@ -4,7 +4,8 @@ const RightNote = () => {
 
     const setHeading = (e) => {
         e.preventDefault()
-        console.log(e)
+        console.log(e.target[0].value)
+        
     }
 
   return (

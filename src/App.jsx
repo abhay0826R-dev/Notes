@@ -5,8 +5,8 @@ import Right from './components/Right'
 const App = () => {
   return (
     <div className='flex h-screen w-full'>
-      <Right />
       <Left />
+      <Right />
     </div>
   )
 }

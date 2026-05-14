@@ -1,16 +1,16 @@
 import React from 'react'
-import Nav from './Nav'
-import Notes from './Notes'
+import NoNoteSelected from './NoNoteSelected'
+import RightNote from './RightNote'
 
-const Right = () => {
+const Left = () => {
   return (
-    <div className='w-1/5 bg-white h-full border-r-2 border-gray-300
-            '>
-      <Nav />
-      <hr className='w-full'/>
-        <Notes />
+    // <div className='w-4/5 h-full bg-gray-50 flex justify-center items-center'>
+      // {/* <NoNoteSelected /> */}
+    // {/* </div> */}
+    <div className='w-4/5 h-full bg-gray-50 flex justify-center items-start my-20'>
+      <RightNote />
     </div>
   )
 }
 
-export default Right
+export default Left
