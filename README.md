@@ -1,17 +1,27 @@
-# React + Vite
+# React Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist note-taking interface built with **React** and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Instant Header Updates**: Sidebar titles update in real-time as you type in the editor.
+* **Automatic Timestamps**: Updates the "Last Edited" time whenever the input field loses focus (`onBlur`).
+* **Clean UI**: Distraction-free layout with a focus on functional design.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Framework**: React.js
+* **Styling**: Tailwind CSS
+* **Deployment**: Vercel
 
-## Expanding the ESLint configuration
+## 🚧 Status: Work in Progress
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Notes
+* [x] Basic UI and Sidebar sync
+* [ ] **Persistent Storage**: Data resets on refresh (needs `localStorage` or DB).
+* [ ] **Active Buttons**: Plus (`+`) and Save buttons are currently non-functional.
+* [ ] **Multi-note Support**: Logic for switching between different note objects.
+
+## 💻 Setup
+
+1. `npm install`
+2. `npm run dev`
