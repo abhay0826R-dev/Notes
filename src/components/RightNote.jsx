@@ -5,11 +5,18 @@ const RightNote = ({ notes, setTitle, setDate, setPara, para }) => {
     const currentNote = notes[0];
 
     const setHeading = (e) => {
-        e.preventDefault()
-        console.log(e.target[0].value)
-        setTitle(e.target[0].value)
+        console.log(e.target.value)
+        setTitle(e.target.value)
+    }
+
+    function updateDate() {
         let date = new Date()
         setDate(date.toDateString().slice(4,10) + ", " + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }))
+    }
+
+    const handleFinalize = (e) => {
+        e.preventDefault()
+        updateDate()
     }
 
     const setParag = (d) => {
@@ -21,8 +28,10 @@ const RightNote = ({ notes, setTitle, setDate, setPara, para }) => {
         <div className='w-full h-full flex flex-col'>
         {/* Header */}
         <div className='flex flex-col items-start justify-center p-4'>
-            <form onSubmit={setHeading}>
-                <input id='title' type='text' className='font-bold text-5xl focus:outline-0 bg-transparent' placeholder="New Note" />
+            <form onSubmit={handleFinalize}>
+                <input onChange={setHeading}
+                onBlur={updateDate}
+                id='title' type='text' className='font-bold text-5xl focus:outline-0 bg-transparent' placeholder="New Note" />
             </form>
             <span>{currentNote.date}</span>
         </div>

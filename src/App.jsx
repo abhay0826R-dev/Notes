@@ -11,6 +11,10 @@ const App = () => {
   const [date, setDate] = useState(currDate.toISOString().slice(0, 10))
   const [para, setPara] = useState("No additional text")
 
+  useEffect (function() {
+    console.log(title)
+  }, [title])
+
   const Notes = [
     {
       id:1,
