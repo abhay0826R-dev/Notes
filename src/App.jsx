@@ -8,7 +8,7 @@ const App = () => {
 
 
   const [title, setTitle] = useState("New Note")
-  const [date, setDate] = useState(currDate.toISOString().slice(0, 10))
+  const [date, setDate] = useState(currDate.toDateString().slice(4,10) + ", " + currDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }))
   const [para, setPara] = useState("No additional text")
 
   useEffect (function() {
