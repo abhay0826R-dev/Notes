@@ -11,10 +11,6 @@ const App = () => {
   const [date, setDate] = useState(currDate.toDateString().slice(4,10) + ", " + currDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }))
   const [para, setPara] = useState("No additional text")
 
-  useEffect (function() {
-    console.log(title)
-  }, [title])
-
   const Notes = [
     {
       id:1,

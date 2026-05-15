@@ -5,8 +5,14 @@ const RightNote = ({ notes, setTitle, setDate, setPara, para }) => {
     const currentNote = notes[0];
 
     const setHeading = (e) => {
-        console.log(e.target.value)
-        setTitle(e.target.value)
+        if (e.target.value === "")
+        {
+            setTitle("New Note")
+        }
+        else 
+        {
+            setTitle(e.target.value)
+        }
     }
 
     function updateDate() {
