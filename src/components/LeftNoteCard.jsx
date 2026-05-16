@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const LeftNoteCard = ({ note }) => {
   return (
-    <div className='bg-blue-100 border-l-6 border-blue-500 p-7 m-0 flex flex-col justify-start w-full'>
+    <div className='bg-blue-100 border-l-6 border-blue-500 p-7 m-0 flex flex-col justify-start w-full  hover:scale-x-102 transition-transform origin-left'>
       <h1 className='text-2xl font-bold'>{note.title}</h1>
       <p>{note.content}</p>
       <p className='text-gray-500'>{note.date}</p>
